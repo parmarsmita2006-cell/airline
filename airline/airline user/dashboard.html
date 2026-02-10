@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBlue Airlines - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="dashboard.html" class="logo">
+                <span><i class="fa-solid fa-plane"></i></span> SkyBlue Airlines
+            </a>
+            <div class="nav-links">
+                <a href="dashboard.html" class="active">Search Flight</a>
+                <a href="history.html">My Bookings</a>
+                <a href="airline index.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Discover Your Next Destination</h1>
+            <p>Experience premium comfort on every domestic flight.</p>
+        </div>
+    </header>
+
+    <!-- Search Widget -->
+    <div class="container">
+        <div class="search-widget">
+            <h2 style="margin-bottom: 1.5rem; color: var(--dark-blue);">Book a Flight</h2>
+            <form action="flights.html" class="search-form">
+                <div class="form-group">
+                    <label>From</label>
+                    <select class="form-control" required>
+                        <option value="">Select Origin</option>
+                        <option value="DEL">New Delhi (DEL)</option>
+                        <option value="BOM">Mumbai (BOM)</option>
+                        <option value="BLR">Bengaluru (BLR)</option>
+                        <option value="GOI">Goa (GOI)</option>
+                        <option value="CCU">Kolkata (CCU)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>To</label>
+                    <select class="form-control" required>
+                        <option value="">Select Destination</option>
+                        <option value="BOM">Mumbai (BOM)</option>
+                        <option value="DEL">New Delhi (DEL)</option>
+                        <option value="GOI">Goa (GOI)</option>
+                        <option value="BLR">Bengaluru (BLR)</option>
+                        <option value="CCU">Kolkata (CCU)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Departure Date</label>
+                    <input type="date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Passengers</label>
+                    <select class="form-control">
+                        <option>1 Passenger</option>
+                        <option>2 Passengers</option>
+                        <option>3 Passengers</option>
+                        <option>4+ Passengers</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Class</label>
+                    <select class="form-control">
+                        <option>Economy</option>
+                        <option>Business</option>
+                        <option>First Class</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="height: 50px; margin-bottom: 5px;">Search
+                    Flights</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Promotional / Info Section -->
+    <div class="container" style="margin-top: 4rem;">
+        <h2 style="text-align: center; margin-bottom: 2rem; color: var(--dark-blue);">Why Fly With Us?</h2>
+        <div class="flight-list"
+            style="flex-direction: row; flex-wrap: wrap; justify-content: center; background: none; box-shadow: none;">
+            <!-- Feature 1 -->
+            <div class="card" style="flex: 1 1 300px; text-align: center; padding: 3rem 2rem;">
+                <div style="font-size: 3rem; color: var(--primary-blue); margin-bottom: 1rem;"><img src="safety.png" width="50px"></div>
+                <h3>Safe & Secure</h3>
+                <p>Your safety is our priority with top-tier hygiene standards.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="card" style="flex: 1 1 300px; text-align: center; padding: 3rem 2rem;">
+                <div style="font-size: 3rem; color: var(--primary-blue); margin-bottom: 1rem;"><img src="seat.webp" width="50px"> </div>
+                <h3>Comfort Seating</h3>
+                <p>Enjoy extra legroom and premium seating on all flights.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="card" style="flex: 1 1 300px; text-align: center; padding: 3rem 2rem;">
+                <div style="font-size: 3rem; color: var(--primary-blue); margin-bottom: 1rem;"><img src="time.png" width="60px"></div>
+                <h3>On Time Support</h3>
+                <p>24/7 customer support to help you with your journey.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SkyBlue Airlines. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
